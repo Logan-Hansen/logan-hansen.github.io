@@ -11,16 +11,36 @@ body {
     background-color: #066163;
 }
 
+
+
+.main {
+    margin-top: 60px;
+}
+
+.main p {
+    font-size: 18px;
+}
+
+.topNav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
 .topNav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #383838;
+
 }
 
 .topNav li {
     float: left;
+
 }
 
 .topNav li a {
@@ -33,10 +53,10 @@ body {
 
 .topNav li a:hover {
     background-color: #F2F2F2;
-    color:#383838;
+    color: #383838;
 }
 
 .topNav .active {
     background-color: #CDBE78;
-    color:#383838;
+    color: #383838;
 }
