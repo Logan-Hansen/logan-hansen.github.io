@@ -1,0 +1,42 @@
+/* 
+Black: #383838
+Teal: #066163
+Yellow: CDBE78
+Grey: #F2F2F2
+*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #066163;
+}
+
+.topNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #383838;
+}
+
+.topNav li {
+    float: left;
+}
+
+.topNav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topNav li a:hover {
+    background-color: #F2F2F2;
+    color:#383838;
+}
+
+.topNav .active {
+    background-color: #CDBE78;
+    color:#383838;
+}
