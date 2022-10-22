@@ -11,14 +11,56 @@ body {
     background-color: #066163;
 }
 
-
-
 .main {
     margin-top: 60px;
 }
 
 .main p {
     font-size: 18px;
+}
+
+p {
+    padding-left: 15px;
+    padding-right: 15px;
+    /* To show paragraph starts. */
+    text-indent: 1em;
+    /* For Firefox. */
+    page-break-inside: avoid;
+    /* For Chrome & friends. */
+    -webkit-column-break-inside: avoid;
+    /* For standard browsers like IE. :-) */
+    break-inside: avoid;
+}
+
+.oneColumn {
+    text-align: center;
+    -webkit-columns: 1 300px;
+    -moz-columns: 1 300px;
+    columns: 1 300px;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em;
+}
+
+@media (min-height: 700px) {
+    .twoColumn {
+        -webkit-columns: 2 300px;
+        -moz-columns: 2 300px;
+        columns: 2 300px;
+        -webkit-column-gap: 2em;
+        -moz-column-gap: 2em;
+        column-gap: 2em;
+        -webkit-column-rule: 1px solid white;
+        -moz-column-rule: 1px solid white;
+        column-rule: 1px solid white;
+    }
+}
+
+
+
+hr {
+    color: white;
+    width: 80%;
 }
 
 .topNav {
@@ -34,12 +76,12 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #383838;
+    background-color: #000000;
 
 }
 
 .topNav li {
-    float: left;
+    float: right;
 
 }
 
@@ -52,11 +94,10 @@ body {
 }
 
 .topNav li a:hover {
-    background-color: #F2F2F2;
-    color: #383838;
+    color: lightgray;
 }
 
 .topNav .active {
-    background-color: #CDBE78;
-    color: #383838;
+    color: white;
+    background-color: #066163;
 }
