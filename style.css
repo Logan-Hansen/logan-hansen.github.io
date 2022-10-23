@@ -161,10 +161,18 @@ p {
     }
 }
 
-
+.oneColumnCenter {
+    text-align: center;
+    -webkit-columns: 1 300px;
+    -moz-columns: 1 300px;
+    columns: 1 300px;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em;
+}
 
 .oneColumn {
-    text-align: center;
+    text-align: left;
     -webkit-columns: 1 300px;
     -moz-columns: 1 300px;
     columns: 1 300px;
