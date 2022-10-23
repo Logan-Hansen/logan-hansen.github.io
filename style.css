@@ -1,18 +1,14 @@
-/* 
-Black: #383838
-Teal: #066163
-Yellow: CDBE78
-Grey: #F2F2F2
-*/
-
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #066163;
+    background-color: gray;
+    overflow-y: scroll;
+    /* Show vertical scrollbar */
 }
 
 .main {
     margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 .main p {
@@ -20,8 +16,9 @@ body {
 }
 
 p {
-    padding-left: 15px;
-    padding-right: 15px;
+    font-family: 'Kalam', cursive;
+    padding-left: 20px;
+    padding-right: 20px;
     /* To show paragraph starts. */
     text-indent: 1em;
     /* For Firefox. */
@@ -31,6 +28,131 @@ p {
     /* For standard browsers like IE. :-) */
     break-inside: avoid;
 }
+
+.menuIcon {
+    display: none;
+}
+
+@media screen and (max-width:850px) {
+    .menuIcon {
+        display: block;
+    }
+}
+
+.page-header {
+    background-color: black;
+    padding: 1.3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar a {
+    color: white;
+    padding: 1.3rem;
+    cursor: pointer;
+}
+
+.nav-bar a.active {
+    background-color: red;
+    color: black;
+}
+
+.menu-icon {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-bar {
+        display: none;
+        position: absolute;
+        top: 3.7rem;
+        left: 0;
+        width: 100%;
+        background-color: var(--bgcolor);
+        text-align: center;
+    }
+}
+
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    right: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.3s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-navigation {
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
 
 .oneColumn {
     text-align: center;
@@ -56,48 +178,7 @@ p {
     }
 }
 
-
-
 hr {
     color: white;
     width: 80%;
-}
-
-.topNav {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-
-}
-
-.topNav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #000000;
-
-}
-
-.topNav li {
-    float: right;
-
-}
-
-.topNav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.topNav li a:hover {
-    color: lightgray;
-}
-
-.topNav .active {
-    color: white;
-    background-color: #066163;
 }
