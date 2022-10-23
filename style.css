@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: gray;
+    background-color: #999999;
     overflow-y: scroll;
     /* Show vertical scrollbar */
 }
@@ -44,18 +44,27 @@ p {
     padding: 1.3rem;
     display: flex;
     justify-content: flex-end;
+    font-family: 'Scope One', serif;
+    font-size: large;
 }
 
 .nav-bar a {
-    color: white;
+    color: lightgray;
     padding: 1.3rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.nav-bar a.active {
-    background-color: red;
-    color: black;
+.nav-bar a.active, .overlay-navigation a.active {
+    color: gold;
 }
+
+.nav-bar a:hover, .nav-bar a:focus {
+    color: white;
+}
+
+
+
 
 .menu-icon {
     color: white;
@@ -128,7 +137,7 @@ p {
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: white;
 }
 
 /* Position the close button (top right corner) */
@@ -172,13 +181,13 @@ p {
         -webkit-column-gap: 2em;
         -moz-column-gap: 2em;
         column-gap: 2em;
-        -webkit-column-rule: 1px solid white;
-        -moz-column-rule: 1px solid white;
-        column-rule: 1px solid white;
+        -webkit-column-rule: 1px solid gold;
+        -moz-column-rule: 1px solid gold;
+        column-rule: 1px solid gold;
     }
 }
 
 hr {
-    color: white;
+    color: gold;
     width: 80%;
 }
