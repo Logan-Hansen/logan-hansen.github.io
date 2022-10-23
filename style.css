@@ -42,10 +42,15 @@ h1 {
     color: white;
 }
 
+#Dracula h2, h3 {
+    font-family: 'Courier Prime', monospace;
+}
+
 #Dracula p {
-    font-family: 'Kalam', cursive;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-family: 'Courier Prime', monospace;
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
     /* To show paragraph starts. */
     text-indent: 1em;
     /* For Firefox. */
