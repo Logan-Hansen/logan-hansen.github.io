@@ -69,6 +69,11 @@ h1 {
     .menuIcon {
         display: block;
     }
+
+    #Dracula p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .page-header {
