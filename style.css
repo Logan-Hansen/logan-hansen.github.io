@@ -15,6 +15,10 @@ body {
     font-size: 18px;
 }
 
+h1 {
+    font-family: 'Italianno', cursive;
+}
+
 p {
     font-family: 'Kalam', cursive;
     padding-left: 20px;
@@ -62,9 +66,6 @@ p {
 .nav-bar a:hover, .nav-bar a:focus {
     color: white;
 }
-
-
-
 
 .menu-icon {
     color: white;
@@ -189,9 +190,9 @@ p {
         -webkit-column-gap: 2em;
         -moz-column-gap: 2em;
         column-gap: 2em;
-        -webkit-column-rule: 1px solid gold;
-        -moz-column-rule: 1px solid gold;
-        column-rule: 1px solid gold;
+        -webkit-column-rule: 1px solid black;
+        -moz-column-rule: 1px solid black;
+        column-rule: 1px solid black;
     }
 }
 
