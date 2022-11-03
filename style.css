@@ -42,29 +42,10 @@ h1 {
     color: white;
 }
 
-#Dracula h2, h3 {
-    font-family: 'Courier Prime', monospace;
-}
-
 #resumeLink {
     font-size: 40px;
     text-decoration: none;
-    color:blue;
-}
-
-#Dracula p {
-    font-family: 'Courier Prime', monospace;
-    font-size: 18px;
-    padding-left: 40px;
-    padding-right: 40px;
-    /* To show paragraph starts. */
-    text-indent: 1em;
-    /* For Firefox. */
-    page-break-inside: avoid;
-    /* For Chrome & friends. */
-    -webkit-column-break-inside: avoid;
-    /* For standard browsers like IE. :-) */
-    break-inside: avoid;
+    color: blue;
 }
 
 .menuIcon {
@@ -74,11 +55,6 @@ h1 {
 @media screen and (max-width:850px) {
     .menuIcon {
         display: block;
-    }
-
-    #Dracula p {
-        padding-left: 20px;
-        padding-right: 20px;
     }
 }
 
@@ -91,8 +67,8 @@ h1 {
     font-size: large;
     position: fixed;
     top: 0;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     width: 100;
     z-index: 9;
 }
@@ -246,4 +222,9 @@ h1 {
 hr {
     color: black;
     width: 80%;
+}
+
+#profilePhoto {
+    width: 15%;
+    padding: 5vh;
 }
