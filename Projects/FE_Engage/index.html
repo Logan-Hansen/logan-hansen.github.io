@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FE Engage Character Growths</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+   </head>
+    <body>
+        <div id="supAll">
+            <table class="supTable" id="stat-table">
+                <tr class="noselect"> 
+                    <th onclick="sortTable('supTable', 0)">Name <i id="NameUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="NameDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 1)">HP <i id="HpUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="HpDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 2)">Str <i id="StrUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="StrDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 3)">Mag <i id="MagUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="MagDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 4)">Dex <i id="DexUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="DexDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 5)">Spd <i id="SpdUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="SpdDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 6)">Def <i id="DefUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="DefDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 7)">Res <i id="ResUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="ResDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 8)">Lck <i id="LckUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="LckDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 9)">Bld <i id="BldUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="BldDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 10)">Total <i id="TotalUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"> </i><i id="TotalDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                </tr>
+                <tr class="">
+                    <td>Alear</td>
+                    <td>60</td>
+                    <td>35</td>
+                    <td>20</td>
+                    <td>45</td>
+                    <td>50</td>
+                    <td>40</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>5</td>
+                    <td>305</td>
+                </tr>
+                <tr class="">
+                    <td>Vander</td>
+                    <td>60</td>
+                    <td>25</td>
+                    <td>10</td>
+                    <td>25</td>
+                    <td>35</td>
+                    <td>35</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>225</td>
+                </tr>
+                <tr class="">
+                    <td>Clanne</td>
+                    <td>40</td>
+                    <td>35</td>
+                    <td>10</td>
+                    <td>40</td>
+                    <td>50</td>
+                    <td>30</td>
+                    <td>25</td>
+                    <td>20</td>
+                    <td>5</td>
+                    <td>255</td>
+                </tr>
+                <tr class="">
+                    <td>Framme</td>
+                    <td>55</td>
+                    <td>30</td>
+                    <td>25</td>
+                    <td>35</td>
+                    <td>55</td>
+                    <td>25</td>
+                    <td>30</td>
+                    <td>25</td>
+                    <td>0</td>
+                    <td>280</td>
+                </tr>
+                <tr class="">
+                    <td>Alfred</td>
+                    <td>65</td>
+                    <td>40</td>
+                    <td>5</td>
+                    <td>35</td>
+                    <td>40</td>
+                    <td>40</td>
+                    <td>20</td>
+                    <td>40</td>
+                    <td>10</td>
+                    <td>295</td>
+                </tr>
+                <tr class="">
+                    <td>Etie</td>
+                    <td>45</td>
+                    <td>40</td>
+                    <td>0</td>
+                    <td>25</td>
+                    <td>35</td>
+                    <td>25</td>
+                    <td>30</td>
+                    <td>25</td>
+                    <td>5</td>
+                    <td>230</td>
+                </tr>
+                <tr class="">
+                    <td>Boucheron</td>
+                    <td>85</td>
+                    <td>20</td>
+                    <td>0</td>
+                    <td>50</td>
+                    <td>45</td>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>15</td>
+                    <td>20</td>
+                    <td>285</td>
+                </tr>
+                <tr class="">
+                    <td>Céline</td>
+                    <td>50</td>
+                    <td>35</td>
+                    <td>25</td>
+                    <td>30</td>
+                    <td>45</td>
+                    <td>30</td>
+                    <td>40</td>
+                    <td>50</td>
+                    <td>5</td>
+                    <td>310</td>
+                </tr>
+                <tr class="">
+                    <td>Chloé</td>
+                    <td>75</td>
+                    <td>25</td>
+                    <td>35</td>
+                    <td>40</td>
+                    <td>55</td>
+                    <td>30</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>5</td>
+                    <td>315</td>
+                </tr>
+                <tr class="">
+                    <td>Louis</td>
+                    <td>75</td>
+                    <td>40</td>
+                    <td>0</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>50</td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>15</td>
+                    <td>275</td>
+                </tr>
+                <tr class="">
+                    <td>Yunaka</td>
+                    <td>50</td>
+                    <td>35</td>
+                    <td>25</td>
+                    <td>40</td>
+                    <td>45</td>
+                    <td>15</td>
+                    <td>45</td>
+                    <td>25</td>
+                    <td>5</td>
+                    <td>285</td>
+                </tr>
+                <tr class="">
+                    <td>Alcryst</td>
+                    <td>65</td>
+                    <td>30</td>
+                    <td>10</td>
+                    <td>40</td>
+                    <td>45</td>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>15</td>
+                    <td>10</td>
+                    <td>265</td>
+                </tr>
+                <tr class="">
+                    <td>Citrinne</td>
+                    <td>45</td>
+                    <td>10</td>
+                    <td>40</td>
+                    <td>25</td>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>40</td>
+                    <td>25</td>
+                    <td>5</td>
+                    <td>240</td>
+                </tr>
+                <tr class="">
+                    <td>Lapis</td>
+                    <td>55</td>
+                    <td>25</td>
+                    <td>20</td>
+                    <td>35</td>
+                    <td>55</td>
+                    <td>35</td>
+                    <td>30</td>
+                    <td>25</td>
+                    <td>5</td>
+                    <td>285</td>
+                </tr>
+                <tr class="">
+                    <td>Diamant</td>
+                    <td>75</td>
+                    <td>30</td>
+                    <td>15</td>
+                    <td>20</td>
+                    <td>40</td>
+                    <td>40</td>
+                    <td>25</td>
+                    <td>20</td>
+                    <td>15</td>
+                    <td>280</td>
+                </tr>
+                <tr class="">
+                    <td>Amber</td>
+                    <td>65</td>
+                    <td>45</td>
+                    <td>0</td>
+                    <td>25</td>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>5</td>
+                    <td>35</td>
+                    <td>15</td>
+                    <td>255</td>
+                </tr>
+                <tr class="">
+                    <td>Jade</td>
+                    <td>55</td>
+                    <td>35</td>
+                    <td>25</td>
+                    <td>35</td>
+                    <td>30</td>
+                    <td>40</td>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>280</td>
+                </tr>
+                <tr class="">
+                    <td>Ivy</td>
+                    <td>55</td>
+                    <td>25</td>
+                    <td>30</td>
+                    <td>25</td>
+                    <td>40</td>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>15</td>
+                    <td>10</td>
+                    <td>265</td>
+                </tr>
+                <tr class="">
+                    <td>Kagetsu</td>
+                    <td>60</td>
+                    <td>30</td>
+                    <td>15</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>40</td>
+                    <td>25</td>
+                    <td>40</td>
+                    <td>10</td>
+                    <td>320</td>
+                </tr>
+                <tr class="">
+                    <td>Zelkov</td>
+                    <td>65</td>
+                    <td>35</td>
+                    <td>15</td>
+                    <td>40</td>
+                    <td>35</td>
+                    <td>35</td>
+                    <td>15</td>
+                    <td>25</td>
+                    <td>10</td>
+                    <td>275</td>
+                </tr>
+                <!---------------------------------------------------->
+                <tr class="">
+                    <td>Fogado</td>
+                    <td>60</td>
+                    <td>30</td>
+                    <td>25</td>
+                    <td>30</td>
+                    <td>55</td>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>25</td>
+                    <td>10</td>
+                    <td>300</td>
+                </tr>
+                <tr class="">
+                    <td>Pandreo</td>
+                    <td>60</td>
+                    <td>5</td>
+                    <td>30</td>
+                    <td>45</td>
+                    <td>45</td>
+                    <td>15</td>
+                    <td>55</td>
+                    <td>30</td>
+                    <td>15</td>
+                    <td>300</td>
+                </tr>
+                <tr class="">
+                    <td>Bunet</td>
+                    <td>65</td>
+                    <td>30</td>
+                    <td>10</td>
+                    <td>40</td>
+                    <td>35</td>
+                    <td>45</td>
+                    <td>25</td>
+                    <td>40</td>
+                    <td>10</td>
+                    <td>300</td>
+                </tr>
+                <tr class="">
+                    <td>Timerra</td>
+                    <td>55</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>45</td>
+                    <td>45</td>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>10</td>
+                    <td>295</td>
+                </tr>
+                <tr class="">
+                    <td>Panette</td>
+                    <td>75</td>
+                    <td>45</td>
+                    <td>10</td>
+                    <td>40</td>
+                    <td>25</td>
+                    <td>30</td>
+                    <td>15</td>
+                    <td>20</td>
+                    <td>15</td>
+                    <td>275</td>
+                </tr>
+                <tr class="">
+                    <td>Merrin</td>
+                    <td>55</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>40</td>
+                    <td>50</td>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>25</td>
+                    <td>10</td>
+                    <td>290</td>
+                </tr>
+                <tr class="">
+                    <td>Hortensia</td>
+                    <td>40</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>35</td>
+                    <td>50</td>
+                    <td>25</td>
+                    <td>55</td>
+                    <td>50</td>
+                    <td>0</td>
+                    <td>295</td>
+                </tr>
+                <tr class="">
+                    <td>Seadall</td>
+                    <td>55</td>
+                    <td>25</td>
+                    <td>15</td>
+                    <td>25</td>
+                    <td>50</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>35</td>
+                    <td>10</td>
+                    <td>265</td>
+                </tr>
+                <tr class="">
+                    <td>Rosado</td>
+                    <td>75</td>
+                    <td>45</td>
+                    <td>25</td>
+                    <td>40</td>
+                    <td>45</td>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>5</td>
+                    <td>315</td>
+                </tr>
+                <tr class="">
+                    <td>Goldmary</td>
+                    <td>65</td>
+                    <td>30</td>
+                    <td>5</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>55</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>5</td>
+                    <td>260</td>
+                </tr>
+                <tr class="">
+                    <td>Lindon</td>
+                    <td>65</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>40</td>
+                    <td>25</td>
+                    <td>40</td>
+                    <td>15</td>
+                    <td>10</td>
+                    <td>270</td>
+                </tr>
+                <tr class="">
+                    <td>Saphir</td>
+                    <td>80</td>
+                    <td>35</td>
+                    <td>0</td>
+                    <td>25</td>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>5</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>235</td>
+                </tr>
+                <tr class="">
+                    <td>Veyle</td>
+                    <td>40</td>
+                    <td>25</td>
+                    <td>45</td>
+                    <td>35</td>
+                    <td>30</td>
+                    <td>25</td>
+                    <td>35</td>
+                    <td>20</td>
+                    <td>0</td>
+                    <td>255</td>
+                </tr>
+                <tr class="">
+                    <td>Mauvier</td>
+                    <td>70</td>
+                    <td>35</td>
+                    <td>40</td>
+                    <td>40</td>
+                    <td>35</td>
+                    <td>50</td>
+                    <td>45</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>345</td>
+                </tr>
+                <tr class="">
+                    <td>Anna</td>
+                    <td>55</td>
+                    <td>15</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>20</td>
+                    <td>35</td>
+                    <td>45</td>
+                    <td>5</td>
+                    <td>325</td>
+                </tr>
+                <tr class="">
+                    <td>Jean</td>
+                    <td>50</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>35</td>
+                    <td>40</td>
+                    <td>25</td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>5</td>
+                    <td>240</td>
+                </tr>
+                
+            </table>
+        </div>      
+    </div>
+
+
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/38b034ceb4.js" crossorigin="anonymous"></script>
+    </body>
+</html>
