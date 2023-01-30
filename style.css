@@ -205,20 +205,6 @@ h1 {
     padding-top: 10px;
 }
 
-@media (min-height: 700px) {
-    .twoColumn {
-        -webkit-columns: 2 300px;
-        -moz-columns: 2 300px;
-        columns: 2 300px;
-        -webkit-column-gap: 2em;
-        -moz-column-gap: 2em;
-        column-gap: 2em;
-        -webkit-column-rule: 1px solid black;
-        -moz-column-rule: 1px solid black;
-        column-rule: 1px solid black;
-    }
-}
-
 hr {
     color: black;
     width: 80%;
