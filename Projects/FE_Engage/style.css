@@ -13,6 +13,7 @@ table {
   margin: 0px;
   border-collapse: collapse;
   font-family: 'Crimson Text', serif;
+  text-align: center;
 }
 
 th,
@@ -26,7 +27,6 @@ td {
 }
 
 th {
-  font-size: 20px;
   background-color: black;
   color: white;
 }

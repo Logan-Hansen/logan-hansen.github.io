@@ -70,22 +70,22 @@ function color_table() {
         // values for total section
         else if (currentText === "225" || currentText === "230") {
             node.style.backgroundColor = "#ffffff";
-        } else if (currentText === "235" || currentText === "240" || currentText === "255") {
+        } else if (currentText === "235" || currentText === "240") {
             node.style.backgroundColor = "#c1e7ff";
-        } else if (currentText === "260" || currentText === "265" || currentText === "270") {
+        } else if (currentText === "255" || currentText === "260") {
             node.style.backgroundColor = "#9dc6e0";
-        } else if (currentText === "275" || currentText === "280" || currentText === "285") {
+        } else if (currentText === "265" || currentText === "270" || currentText === "275" ) {
             node.style.backgroundColor = "#7aa6c2";
-        } else if (currentText === "290" || currentText === "295") {
+        } else if (currentText === "280" || currentText === "285") {
             node.style.backgroundColor = "#5886a5";
             node.style.color = "#ffffff";
-        } else if (currentText === "300" || currentText === "305") {
+        } else if (currentText === "290" || currentText === "295") {
             node.style.backgroundColor = "#2D5A76";
             node.style.color = "#ffffff";
-        } else if (currentText === "310" || currentText === "315") {
+        } else if (currentText === "300" ||currentText === "305" || currentText === "310") {
             node.style.backgroundColor = "#004c6d";
             node.style.color = "#ffffff";
-        } else if (currentText === "320" || currentText === "325") {
+        } else if (currentText === "315" || currentText === "320" || currentText === "325") {
             node.style.backgroundColor = "#0A2F51";
             node.style.color = "#ffffff";
         } else if (currentText === "345") {
