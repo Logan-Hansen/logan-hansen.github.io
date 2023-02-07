@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FE Engage Character Growths</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+   </head>
+    <body>
+        <div id="supAll">
+            <table class="supTable" id="stat-table">
+                <tr class="noselect"> 
+                    <th onclick="sortTable('supTable', 0)">Name <i id="NameUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="NameDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 1)">HP <i id="HpUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="HpDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 2)">Str <i id="StrUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="StrDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 3)">Mag <i id="MagUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="MagDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 4)">Dex <i id="DexUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="DexDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 5)">Spd <i id="SpdUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="SpdDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 6)">Def <i id="DefUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="DefDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 7)">Res <i id="ResUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="ResDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 8)">Lck <i id="LckUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="LckDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 9)">Bld <i id="BldUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"></i> <i id="BldDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                    <th onclick="sortTable('supTable', 10)">Total <i id="TotalUp" class="fa-solid fa-arrow-up" style="visibility:hidden;"> </i><i id="TotalDown" class="fa-solid fa-arrow-down" style="visibility:hidden;"></i></th>
+                </tr>
+                <tr class="">
+                    <td>Sword Fighter</td>
+                    <td>10</td> <!-- HP -->
+                    <td>10</td> <!-- Str -->
+                    <td>0</td> <!-- Mag -->
+                    <td>15</td> <!-- Dex -->
+                    <td>20</td> <!-- Spd -->
+                    <td>0</td> <!-- Def -->
+                    <td>15</td> <!-- Res -->
+                    <td>10</td> <!-- Lck -->
+                    <td>0</td> <!-- Bld -->
+                    <td>80</td> <!-- Total -->
+                </tr>
+
+                <tr class="">
+                    <td>Lance Fighter</td>
+                    <td>10</td> <!-- HP -->
+                    <td>10</td> <!-- Str -->
+                    <td>5</td> <!-- Mag -->
+                    <td>20</td> <!-- Dex -->
+                    <td>5</td> <!-- Spd -->
+                    <td>10</td> <!-- Def -->
+                    <td>5</td> <!-- Res -->
+                    <td>0</td> <!-- Lck -->
+                    <td>0</td> <!-- Bld -->
+                    <td>75</td> <!-- Total -->
+                </tr>
+
+                
+                <tr class="">
+                    <td>Axe Fighter</td>
+                    <td>25</td> <!-- HP -->
+                    <td>20</td> <!-- Str -->
+                    <td>0</td> <!-- Mag -->
+                    <td>5</td> <!-- Dex -->
+                    <td>10</td> <!-- Spd -->
+                    <td>5</td> <!-- Def -->
+                    <td>0</td> <!-- Res -->
+                    <td>0</td> <!-- Lck -->
+                    <td>5</td> <!-- Bld -->
+                    <td>70</td> <!-- Total -->
+                </tr>
+
+                
+                <tr class="">
+                    <td>Archer</td>
+                    <td>10</td> <!-- HP -->
+                    <td>15</td> <!-- Str -->
+                    <td>0</td> <!-- Mag -->
+                    <td>25</td> <!-- Dex -->
+                    <td>10</td> <!-- Spd -->
+                    <td>5</td> <!-- Def -->
+                    <td>0</td> <!-- Res -->
+                    <td>5</td> <!-- Lck -->
+                    <td>0</td> <!-- Bld -->
+                    <td>70</td> <!-- Total -->
+                </tr>
+
+                
+                <tr class="">
+                    <td>Sword/Axe/Lance Armor Knight</td>
+                    <td>20</td> <!-- HP -->
+                    <td>15</td> <!-- Str -->
+                    <td>0</td> <!-- Mag -->
+                    <td>10</td> <!-- Dex -->
+                    <td>0</td> <!-- Spd -->
+                    <td>30</td> <!-- Def -->
+                    <td>0</td> <!-- Res -->
+                    <td>0</td> <!-- Lck -->
+                    <td>5</td> <!-- Bld -->
+                    <td>80</td> <!-- Total -->
+                </tr>
+
+                
+                <tr class="">
+                    <td>Sword/Axe/Lance Cavalier</td>
+                    <td>10</td> <!-- HP -->
+                    <td>10</td> <!-- Str -->
+                    <td>0</td> <!-- Mag -->
+                    <td>10</td> <!-- Dex -->
+                    <td>10</td> <!-- Spd -->
+                    <td>10</td> <!-- Def -->
+                    <td>10</td> <!-- Res -->
+                    <td>10</td> <!-- Lck -->
+                    <td>10</td> <!-- Bld -->
+                    <td>80</td> <!-- Total -->
+                </tr>
+
+                
+                <tr class="">
+                    <td>Sword/Axe/Lance Flier</td>
+                    <td>5</td> <!-- HP -->
+                    <td>10</td> <!-- Str -->
+                    <td>5</td> <!-- Mag -->
+                    <td>10</td> <!-- Dex -->
+                    <td>10</td> <!-- Spd -->
+                    <td>0</td> <!-- Def -->
+                    <td>10</td> <!-- Res -->
+                    <td>10</td> <!-- Lck -->
+                    <td>0</td> <!-- Bld -->
+                    <td>60</td> <!-- Total -->
+                </tr>
+             
+                <tr class="">
+                    <td>Mage</td>
+                    <td>0</td> <!-- HP -->
+                    <td>0</td> <!-- Str -->
+                    <td>25</td> <!-- Mag -->
+                    <td>5</td> <!-- Dex -->
+                    <td>0</td> <!-- Spd -->
+                    <td>0</td> <!-- Def -->
+                    <td>25</td> <!-- Res -->
+                    <td>5</td> <!-- Lck -->
+                    <td>0</td> <!-- Bld -->
+                    <td>60</td> <!-- Total -->
+                </tr>
+
+                <tr class="">
+                    <td>Martial Monk</td>
+                    <td>0</td> <!-- HP -->
+                    <td>10</td> <!-- Str -->
+                    <td>25</td> <!-- Mag -->
+                    <td>0</td> <!-- Dex -->
+                    <td>0</td> <!-- Spd -->
+                    <td>10</td> <!-- Def -->
+                    <td>20</td> <!-- Res -->
+                    <td>10</td> <!-- Lck -->
+                    <td>0</td> <!-- Bld -->
+                    <td>75</td> <!-- Total -->
+                </tr>
+    
+                
+            </table>
+        </div>      
+    </div>
+
+
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/38b034ceb4.js" crossorigin="anonymous"></script>
+    </body>
+</html>
