@@ -63,7 +63,7 @@ function color_table() {
         } else if (currentText === "70" || currentText === "75") {
             node.style.backgroundColor = "#0A2F51";
             node.style.color = "#ffffff";
-        } else if (currentText === "80" || currentText === "85" || currentText === "90" || currentText === "95" ) {
+        } else if (currentText === "80" || currentText === "85" || currentText === "90" || currentText === "95" || currentText === "100" ) {
             node.style.backgroundColor = "#062029";
             node.style.color = "#ffffff";
         }
