@@ -37,6 +37,8 @@ img {
 }
 
 
+
+
 .navBar {
     margin-bottom:30px;
 }
@@ -71,3 +73,9 @@ img {
 .active {
     background-color: #04AA6D;
 }
+
+@media only screen and (max-width: 600px) {
+    img {
+        width: 25%;
+    }
+  }
