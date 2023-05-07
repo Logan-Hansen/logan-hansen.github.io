@@ -13,7 +13,7 @@ h1 {
 
 .translation p {
     margin-right: 2px;
-    margin-left:2px;
+    margin-left: 2px;
 }
 
 .row {
@@ -48,7 +48,7 @@ img {
 
 
 .navBar {
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
 .navBar ul {
@@ -91,4 +91,4 @@ img {
         width: 25%;
         font-size: small;
     }
-  }
+}
