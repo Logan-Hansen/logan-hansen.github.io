@@ -1,61 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="author" content="Logan Hansen">
-        <meta name="keywords" content="Programmer, Game Development, Web Development, High School Teacher, Unity, HTML, CSS, Python">
-        <meta name="description" content="The personal website for Logan Hansen, a Utah High School teacher and programmer.">
-        <title>Ithilendil - Home</title>
-        <link rel="stylesheet" href="style.css" />
-        <script src="https://kit.fontawesome.com/ee62f641be.js" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-        <link rel="icon" type="image/x-icon" href="favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Italianno&family=Scope+One&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <!-- The overlay -->
-        <div id="overlayNav" class="overlay">
-            <!-- Button to close the overlay navigation -->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <!-- Overlay content -->
-            <div class="overlay-navigation">
-                <a class="active" href="#"><i class="fa-solid fa-house"></i> Home</a>
-                <a href="about.html"><i class="fa-solid fa-user"></i> About</a>
-                <a href="projects.html"><i class="fa-solid fa-diagram-project"></i> Projects</a>
-                <a href="contact.html"><i class="fa-solid fa-address-card"></i> Contact</a>
-            </div>
-        </div>
 
-        <div class="page-header">
-            <div id="nav-bar" class="nav-bar">
-                <a class="active" href="#"><i class="fa-solid fa-house"></i> Home</a>
-                <a href="about.html"><i class="fa-solid fa-user"></i> About</a>
-                <a href="projects.html"><i class="fa-solid fa-diagram-project"></i> Projects</a>
-                <a href="contact.html"><i class="fa-solid fa-address-card"></i> Contact</a>
-            </div>
-            <!-- Use any element to open/show the overlay navigation menu -->
-            <a id="menu-icon" class="menu-icon">
-                <i class="fa-solid fa-bars" onclick="openNav()"></i>
-            </a>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-...YourIntegrityCodeHere..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon link -->
+    <link rel="icon" href="Favicon/favicon.ico" type="image/x-icon">
+</head>
 
-        <div class="main">
-            <div style="height: 95vh">
-                <div class="hero-image">
-                    <div class="hero-text">
-                        <h1 style="font-size: 10vh">Ithilendil</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="oneColumnCenter">
-                <h1>Welcome!</h1>
-                <p>This website is currently under construction, but will eventually be a portfolio site for my projects and ideas.</p>
-            </div>
+<body>
 
-        </div>
-    </body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+        </nav>
+    </header>
+
+
+
+    <div class="hero-image">
+        <p>“All we have to decide is what to do with the time that is given us.”<br>
+            ― J.R.R. Tolkien</p>
+    </div>
+
+    <footer>
+        <p>GitHub: <a href="https://github.com/Logan-Hansen" target="_blank" class="footer-icons"><i
+                    class="fab fa-github"></i></a></p>
+
+    </footer>
+
+</body>
+
 </html>
