@@ -24,6 +24,7 @@ td {
   border-width:2px;
   padding:0px;
   margin:0px;
+  vertical-align: text-top;
 }
 
 th {
