@@ -71,23 +71,23 @@ nav a:hover {
 }
 
 .div-container {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: #333;
 }
 
 .div-content {
     background-color: #bbb;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-left: 100%;
+    padding-right: 100%;
 }
 
 .div-content h1,
