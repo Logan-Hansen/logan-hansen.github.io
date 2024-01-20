@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #aaa;
+    background-color: #53683f;
 }
 
 @font-face {
@@ -64,7 +64,47 @@ nav a:hover {
         -1px -2px 0 #000,
         1px -2px 0 #000;
     font-size: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 30px #333 solid;
 
+}
+
+.div-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #333;
+}
+
+.div-content {
+    background-color: #bbb;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.div-content h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'ringbearermedium';
+}
+
+.div-content a {
+    color: #53683f;
+}
+
+.div-content a:visited {
+    color: #53683f;
 }
 
 
@@ -78,9 +118,10 @@ footer {
 .footer-icons {
     font-size: 24px;
     margin: 0 10px;
-    color: white;
+    color: #bbb;
 }
 
 ul {
     list-style-position: inside;
+    list-style-type: none;
 }
